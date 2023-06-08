@@ -4,13 +4,25 @@
   box-sizing: border-box;
 }
 
+body,p{
+  margin: 33px;
+}
+p, td,th{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+}
+label{
+  display: block;
+  font-size: 13px;
+  margin-top: 10px;
+}
 /*index全体*/
 .index-body{
   margin: 33px;
 }
 /*indexのテーブル部分*/
 .book-title{
-  width: 182px;
+  width: 200px;
   height: 18px;
   padding: 1px 5px 7px;
 }
@@ -19,6 +31,11 @@
   height: 18px;
   padding: 1px 5px 7px;
 }
+.action{
+  display: inline-block;
+  margin-right: 10px;
+}
+
 /*indexの投稿部分*/
 .new-book{
   margin: 16px 0;
@@ -28,12 +45,6 @@
 /*show全体*/
 .show-body {
   margin: 33px;
-}
-.show-body p{
-  margin: 33px;
-}
-.link{
-  margin:;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

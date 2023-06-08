@@ -1,6 +1,6 @@
 <div class="show-body">
   <p>Title:<span><%= @book.title %></span></p>
-  <p>Body:<psan><%= @book.body %></psan></p>
+  <p>Body:<span><%= @book.body %></span></p>
 
-  <p class="link"><%=%>|<span><%= link_to "Back",index_path %></span></p>
+  <p class="link"><span><%= link_to "Edit",edit_path(@book.id) %></span> | <span><%= link_to "Back",index_path %></span></p>
 </div>
