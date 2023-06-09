@@ -4,21 +4,26 @@
   box-sizing: border-box;
 }
 
-body,p{
+body,div{
   margin: 33px;
 }
-p, td,th{
+p,a,td,th{
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
+}
+h1{
+  font-size: 2em;
+}
+p{
+  margin: 33px 0;
+}
+a{
+  color: #696969;
 }
 label{
   display: block;
   font-size: 13px;
   margin-top: 10px;
-}
-/*index全体*/
-.index-body{
-  margin: 33px;
 }
 /*indexのテーブル部分*/
 .book-title{
@@ -42,9 +47,12 @@ label{
 }
 
 
-/*show全体*/
-.show-body {
-  margin: 33px;
+/*エラー画面*/
+
+/*投稿、更新完了メッセージ*/
+.flash{
+  font-size: 13px;
+  color: #008000;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
