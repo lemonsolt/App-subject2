@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body,div{
+body{
   margin: 33px;
 }
 p,a,td,th{
@@ -48,7 +48,57 @@ label{
 
 
 /*エラー画面*/
+.error-box{
+  position:relative;
+  margin: 0;
+  border: 2px solid red;
+  width: 444px;
+}
+.error-explanation{
+  /*中身調節*/
+  background-color: #b22222;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: 0 ;
+}
 
+.error-block{
+  /*文字の場所調節*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*中身の調節*/
+  height: 70px;
+  font-size: 12px;
+  list-style:square;
+  padding-left: 25px;
+  background-color: #eee;
+  
+  margin: 0;
+}
+ul{
+  display: block;
+  width: 440px;
+  height: 150px;
+}
+li{
+  margin-left: 40px;
+}
+.field-with-errors{
+  margin: 0;
+  width:fit-content;
+  padding: 2px;
+  background-color: red;
+}
+.field-with-errors:nth-child(1){
+  margin-top: 20px;
+}
+.field-with-errors:nth-child(3){
+  margin-top: 10px;
+}
 /*投稿、更新完了メッセージ*/
 .flash{
   font-size: 13px;
